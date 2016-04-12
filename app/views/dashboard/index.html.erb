@@ -1,0 +1,8 @@
+<header>
+  <h1>Welcome to shine, <%= current_user.email %></h1>
+  <h2>We r using rails <%= Rails.version %></h2>
+</header>
+<section>
+  <p>Future hiome of shine's dashboard</p>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+</section>
